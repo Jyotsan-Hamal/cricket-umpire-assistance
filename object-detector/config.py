@@ -2,7 +2,8 @@
 Set the config variable.
 '''
 
-import ConfigParser as cp
+
+import configparser as cp
 import json
 
 config = cp.RawConfigParser()

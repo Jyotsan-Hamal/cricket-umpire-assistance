@@ -41,10 +41,9 @@ def nms(detections, threshold=.5):
     The output is a list of detections.
     '''
     if len(detections) == 0:
-	return []
+	    return []
     # Sort the detections based on confidence score
-    detections = sorted(detections, key=lambda detections: detections[2],
-            reverse=True)
+    detections = sorted(detections, key=lambda detections: detections[2],reverse=True)
     # Unique detections will be appended to this list
     new_detections=[]
     # Append the first detection
@@ -69,5 +68,5 @@ def nms(detections, threshold=.5):
 if __name__ == "__main__":
     # Example of how to use the NMS Module
     detections = [[31, 31, .9, 10, 10], [31, 31, .12, 10, 10], [100, 34, .8,10, 10]]
-    print "Detections before NMS = {}".format(detections)
-    print "Detections after NMS = {}".format(nms(detections))
+    print("Detections before NMS = {}".format(detections))
+    print("Detections after NMS = {}".format(nms(detections)))

@@ -189,7 +189,7 @@ if bowling_attack < 2:
         (grabbed1, frame1) = camera.read()
         frame_no += 1
         if not grabbed1:
-            print "Unable to grab frame: "+str(frame_no)
+            print("Unable to grab frame: "+str(frame_no))
             break
 
         gray1 = cv2.cvtColor(prev, cv2.COLOR_BGR2GRAY)
@@ -256,7 +256,7 @@ while True:
     (grabbed1, frame1) = camera.read()
 
     if not grabbed1:
-        print "Unable to grab frame: "+str(frame_no)
+        print("Unable to grab frame: "+str(frame_no))
         break
 
     gray_image_1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
@@ -300,7 +300,7 @@ while True:
     (grabbed1, frame1) = camera.read()
     frame_no += 1
     if not grabbed1:
-        print "Unable to grab frame: "+str(frame_no)
+        print("Unable to grab frame: "+str(frame_no))
         break
 
     if frame_no > initial_frame + DURATION:
